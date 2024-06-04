@@ -1,6 +1,7 @@
 /* Utilidades */
 @import "./css/utils/colors.css";
 @import "./css/utils/components.css";
+@import "./css/utils/typography.css";
 
 /* Globais */
 @import "./css/global.css";
