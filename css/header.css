@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 25px;
-  color: var(--cor-t3);
   position: relative;
 }
 
@@ -12,18 +11,12 @@
   align-items: center;
 }
 
-.header-logo span {
-  font: 600 1.75rem/1 "Poppins", sans-serif;
-}
-
 /* Header nav */
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  color: var(--cor-header);
-  font: 500 1.125rem/1 "Poppins";
 }
 
 .header-nav ul {
@@ -51,8 +44,9 @@
 
 [data-delivery="delivery"] {
   background: var(--cor-b1);
-  color: white;
   border-radius: 40px;
+
+  color: white;
 }
 
 [data-delivery="delivery"]:hover {
@@ -64,12 +58,7 @@
   max-width: 350px;
 }
 
-.header-brief h2 {
-  font: bold 1.5rem/1 "Poppins";
-}
-
 .header-brief h1 {
-  font: bold 5rem/1.045 "Poppins";
   margin: 1rem 0;
 }
 

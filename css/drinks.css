@@ -16,13 +16,11 @@
   max-width: 550px;
   padding: 20px 0;
   text-align: center;
-  color: var(--cor-header);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .drinks-texto h2 {
   width: max-content;
-  font: 600 2.75rem/1.57 "Poppins";
   position: relative;
 }
 
@@ -36,12 +34,8 @@
   background: var(--cor-header);
 }
 
-.drinks-texto p {
-  font: 400 1rem/1.57 "Poppins";
-}
-
 .drinks-texto a {
-  font: 600 1rem/1.57 "Poppins";
+  font-weight: 600;
 }
 
 /* Itens */
@@ -77,18 +71,11 @@
 
 /* Texto dos itens */
 .drinks-item span {
-  font-weight: 600;
   font-size: 1.25rem;
 }
 
 .drinks-item h3 {
-  font-weight: 600;
   font-size: 2rem;
-}
-
-.drinks-item p {
-  font-weight: 400;
-  font-size: 1rem;
 }
 
 .drinks-item a {
@@ -96,11 +83,10 @@
   box-shadow: 0 8px 7px rgba(0, 0, 0, 0.25);
   width: 100%;
   border-radius: 25px;
-  padding: 12px 0;
+  padding: 12px;
 
   color: black;
-  font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 @media (width <= 1000px) {
