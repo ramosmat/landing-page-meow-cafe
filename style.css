@@ -1,8 +1,12 @@
 /* Utilidades */
 @import "./css/utils/colors.css";
+@import "./css/utils/components.css";
 
 /* Globais */
 @import "./css/global.css";
 
+/* Header */
+@import "./css/header.css";
+
 /* Cursor */
-@import "./css/cursor.css";
+/* @import "./css/cursor.css"; */
