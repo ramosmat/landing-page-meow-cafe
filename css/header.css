@@ -26,6 +26,7 @@
 
 .header-nav li {
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .header-nav ul li::after {
@@ -38,15 +39,25 @@
   transition: 0.3s;
 }
 
-.header-nav li:hover::after {
-  width: 100%;
-}
-
 [data-delivery="delivery"] {
   background: var(--cor-b1);
   border-radius: 40px;
 
   color: white;
+}
+
+.header-nav ul li[data-delivery="delivery"]::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: white;
+  margin-top: 2px;
+  transition: 0.3s;
+}
+
+.header-nav li:hover::after {
+  width: 100% !important;
 }
 
 [data-delivery="delivery"]:hover {
