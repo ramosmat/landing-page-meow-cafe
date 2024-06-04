@@ -2,5 +2,11 @@
   box-sizing: border-box;
   max-width: 1200px;
   padding: 0 20px;
-  margin: auto auto 60px auto;
+  margin: auto auto 100px auto;
+}
+
+@media (width <= 1000px) {
+  .container {
+    margin-bottom: 200px;
+  }
 }
