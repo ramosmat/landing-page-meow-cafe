@@ -92,6 +92,7 @@
 @media (width <= 1000px) {
   .drinks {
     gap: 30px;
+    margin-bottom: 50px;
   }
   .drinks-item ul {
     display: grid;
