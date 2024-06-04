@@ -10,3 +10,9 @@
     margin-bottom: 200px;
   }
 }
+
+@media (width <= 450px) {
+  .container {
+    margin-bottom: 80px;
+  }
+}

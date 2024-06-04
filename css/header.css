@@ -91,3 +91,18 @@
     right: -250px;
   }
 }
+
+@media (width <= 450px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+  .header-img {
+    display: none;
+  }
+  .header-logo {
+    flex-direction: column;
+  }
+  .header-logo span {
+    display: none;
+  }
+}
