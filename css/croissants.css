@@ -45,6 +45,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 0;
+    margin-bottom: 50px;
   }
   .croissants-texto {
     display: flex;

@@ -78,17 +78,6 @@
   font-size: 2rem;
 }
 
-.drinks-item a {
-  background: white;
-  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  border-radius: 25px;
-  padding: 12px;
-
-  color: black;
-  font-size: 1.125rem;
-}
-
 @media (width <= 1000px) {
   .drinks {
     gap: 30px;
