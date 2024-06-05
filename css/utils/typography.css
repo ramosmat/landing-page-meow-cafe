@@ -2,6 +2,10 @@
   font: 400 1rem/1.57 "Poppins", sans-serif;
 }
 
+.font-xs-b {
+  font: 600 1rem/1.57 "Poppins", sans-serif;
+}
+
 .font-s {
   font: 400 1.25rem/1.57 "Poppins", sans-serif;
 }

@@ -1,0 +1,49 @@
+.about-bg {
+  background: url("../img/about-bg.svg") no-repeat center;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+
+  position: relative;
+}
+
+.about-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Texto esquerda */
+.about-titulo span {
+  margin-bottom: 16px;
+}
+
+.about-titulo h2 {
+  line-height: 1.045;
+}
+
+/* Texto direita */
+.about-texto {
+  text-align: left;
+  color: white;
+}
+
+.about-texto h2 {
+  padding: 8px 0;
+}
+
+.about-texto p {
+  margin-top: 16px;
+  max-width: 350px;
+}
+
+@media (width <= 1000px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
