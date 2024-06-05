@@ -1,10 +1,13 @@
+html {
+  margin-bottom: 50px;
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   font-family: "Poppins", sans-serif;
   background: var(--cor-bg);
-  margin-bottom: 2000px;
 }
 
 h1,
