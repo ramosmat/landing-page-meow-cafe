@@ -1,11 +1,18 @@
 //Remover evento padrão dos links
-function preventEvent() {
-  const allLinks = [...document.querySelectorAll("a")];
-
-  allLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
+function scrollSmooth() {
+  const linksInternos = document.querySelectorAll('a[href^="#"]');
+  function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const sectionTarget = document.querySelector(href);
+    sectionTarget.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
+  }
+
+  [...linksInternos].forEach((link) => {
+    link.addEventListener("click", scrollToSection);
   });
 }
 
@@ -19,5 +26,5 @@ function textChange() {
   }
 }
 
-preventEvent();
+scrollSmooth();
 textChange();
