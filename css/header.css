@@ -76,6 +76,7 @@
 /* Background image */
 .header-img {
   z-index: -1;
+
   position: absolute;
   top: 0;
   right: 0;
@@ -98,8 +99,11 @@
   .header-brief h1 {
     font-size: 2rem;
   }
+}
+
+@media (width <= 700px) {
   .header-img {
-    right: -250px;
+    display: none;
   }
 }
 
@@ -107,9 +111,7 @@
   .header {
     grid-template-columns: 1fr;
   }
-  .header-img {
-    display: none;
-  }
+
   .header-logo {
     flex-direction: column;
   }

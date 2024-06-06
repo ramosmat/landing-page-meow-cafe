@@ -1,0 +1,134 @@
+.location-bg {
+  padding: 0 20px;
+}
+
+.location {
+  background: linear-gradient(#2b2727, #78241e);
+  border-radius: 50px;
+  /* box-shadow: inset 0 -50px 0 var(--cor-bg), inset 0 50px 0 var(--cor-bg); */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* margin-top: 200px; */
+  min-height: 450px;
+
+  position: relative;
+}
+
+/* Imagem */
+.location-img {
+  position: absolute;
+  max-width: 550px;
+  left: 20%;
+  right: 30%;
+}
+
+/* Texto esquerda */
+.location-titulo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location-titulo h1 {
+  font-size: 4rem;
+  position: relative;
+  max-width: 5ch;
+  line-height: 1.0453;
+}
+
+.location-titulo h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: white;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.location-titulo span {
+  margin-top: 16px;
+}
+
+.location-titulo p {
+  max-width: 30ch;
+}
+
+/* Texto direita */
+.location-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.location-texto h2 {
+  position: relative;
+  max-width: max-content;
+}
+
+.location-texto h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.location-texto p {
+  margin-top: 20px;
+  max-width: 30ch;
+}
+
+.location-texto span {
+  margin-left: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.location-texto span::before {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 41px;
+  background: url("../img/location-logo.svg");
+  position: absolute;
+  left: -40px;
+}
+
+@media (width <= 1000px) {
+  .location-img {
+    display: none;
+  }
+}
+
+@media (width <= 800px) {
+  .location {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  /* Texto inicial */
+  .location-titulo h1 {
+    max-width: 100%;
+  }
+  .location-titulo h1::after {
+    left: 125px;
+  }
+  /* Texto secundário */
+  .location-texto h2::after {
+    bottom: -10px;
+  }
+  .location-texto p {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+}
