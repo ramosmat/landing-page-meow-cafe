@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   background: var(--cor-bg);
+  overflow-x: hidden;
 }
 
 h1,
