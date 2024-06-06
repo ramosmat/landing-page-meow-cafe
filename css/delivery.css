@@ -51,6 +51,8 @@
   .delivery {
     align-items: center;
     margin-bottom: 50px;
+
+    min-height: 300px;
   }
   .delivery-img {
     display: none;
@@ -72,7 +74,14 @@
   }
 }
 
-@media (width <= 450px) {
+@media (width <= 480px) {
+  .delivery-texto {
+    gap: 5px;
+  }
+  .delivery-texto p {
+    max-width: 200px;
+    margin-bottom: 16px;
+  }
   .delivery-texto a {
     max-width: 150px;
   }
