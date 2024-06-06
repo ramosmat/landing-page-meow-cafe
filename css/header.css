@@ -86,18 +86,11 @@
   .header-logo span {
     font-size: 1.25rem;
   }
-  /* povisório até colocar o menu-mobile */
   .header-nav {
     display: none;
   }
   .header-nav ul {
-    font-size: 1rem;
-  }
-  .header-brief {
-    grid-row: 2;
-  }
-  .header-brief h1 {
-    font-size: 2rem;
+    margin: 0 auto;
   }
 }
 
@@ -110,12 +103,14 @@
 @media (width <= 450px) {
   .header {
     grid-template-columns: 1fr;
-  }
-
-  .header-logo {
-    flex-direction: column;
+    justify-items: center;
+    margin-bottom: 32px;
   }
   .header-logo span {
     display: none;
+  }
+  .header-brief {
+    margin-top: 32px;
+    text-align: center;
   }
 }
