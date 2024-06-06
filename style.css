@@ -26,3 +26,6 @@
 
 /* Footer */
 @import "./css/footer.css";
+
+/* Login modal */
+@import "./css/login-modal.css";

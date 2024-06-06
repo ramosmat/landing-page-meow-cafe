@@ -1,0 +1,93 @@
+.modal-bg {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-bg.ativo {
+  display: flex;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background: var(--cor-bg);
+  box-sizing: border-box;
+  width: 80vw;
+  max-width: 500px;
+  margin: auto;
+  padding: 40px 20px 20px 20px;
+  border: 10px solid #fb5;
+  box-shadow: 0 0 0 10px var(--cor-bg);
+  border-radius: 20px;
+  position: relative;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal {
+  animation: modal 0.5s forwards;
+}
+
+button.fechar {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 4px solid var(--cor-bg);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  background: var(--cor-p1);
+  color: var(--cor-bg);
+  font-weight: bold;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  font-weight: 600;
+}
+
+.modal input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #222;
+  border-radius: 4px;
+}
+
+.modal input + label {
+  margin-top: 16px;
+}
+
+button[type="submit"] {
+  max-width: max-content;
+  place-self: end;
+  margin-top: 16px;
+  padding: 15px 30px;
+  border: none;
+  background-color: var(--cor-p1);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
