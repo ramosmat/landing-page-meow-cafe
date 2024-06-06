@@ -1,0 +1,58 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+
+  padding-top: 60px;
+  padding-bottom: 20px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Texto Esquerda */
+.footer-infos p {
+  margin-top: 8px;
+  max-width: 30ch;
+}
+
+/*Social Links*/
+.social_links {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+.social_links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+
+  transition: background 0.5s;
+  border-radius: 50%;
+}
+
+.social_links a:hover {
+  background: #dadada;
+}
+
+/* Listas */
+.links li + li {
+  margin-top: 4px;
+}
+
+@media (width <= 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .social_links {
+    justify-content: start;
+  }
+}
