@@ -3,10 +3,9 @@ import outsideClick from "./outsideClick.js";
 export default function initMenuMobile() {
   const menuButton = document.querySelector(".header-button");
   const menuList = document.querySelector(".header-nav");
-  const eventos = ["click", "touchstart"];
 
   if (menuButton) {
-    function openMenu(event) {
+    function openMenu() {
       menuButton.classList.toggle("ativo");
       menuList.classList.toggle("ativo");
 
@@ -18,15 +17,14 @@ export default function initMenuMobile() {
       menuList.style.top = btnY + 45 + "px";
       menuList.style.width = btnMW + "px";
 
-      outsideClick(menuList, eventos, () => {
-        console.log("teste");
+      outsideClick(menuList, "click", () => {
         menuButton.classList.remove("ativo");
         menuList.classList.remove("ativo");
       });
     }
 
-    eventos.forEach((evento) => {
-      menuButton.addEventListener(evento, openMenu);
-    });
+    if (menuButton && menuList) {
+      menuButton.addEventListener("click", openMenu);
+    }
   }
 }

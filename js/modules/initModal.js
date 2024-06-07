@@ -2,6 +2,7 @@ export default function initModal() {
   const botaoOpen = document.querySelector('[data-modal="abrir"]');
   const botaoClose = document.querySelector('[data-modal="fechar"]');
   const modalArea = document.querySelector(".modal-bg");
+  const botaoEntrar = document.querySelector('button[type="submit"]');
 
   function toggleModal(event) {
     event.preventDefault();
@@ -18,4 +19,5 @@ export default function initModal() {
   botaoOpen.addEventListener("click", toggleModal);
   botaoClose.addEventListener("click", toggleModal);
   modalArea.addEventListener("click", clickOutModal);
+  botaoEntrar.addEventListener("click", clickOutModal);
 }
