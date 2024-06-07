@@ -19,11 +19,8 @@
 }
 
 @media (width <= 1000px) {
-  .container {
-    margin-bottom: 200px;
-  }
   .botao {
-    max-width: 200px;
+    max-width: 250px;
   }
 }
 

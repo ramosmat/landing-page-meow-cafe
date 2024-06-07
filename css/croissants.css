@@ -8,6 +8,7 @@
 /* Texto */
 .croissants-texto span {
   background: white;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   padding: 5px 10px;
 }

@@ -1,0 +1,13 @@
+{
+  "name": "landing-page-meow-cafe",
+  "version": "1.0.0",
+  "description": "Dê vida ao design do \"Meow Café\" presente no Figma, transformando-o em uma página funcional! O principal objetivo deste mini projeto é refinar suas habilidades em HTML, JavaScript e CSS, construindo uma landing page sem depender de frameworks ou bibliotecas externas.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
