@@ -3,6 +3,7 @@ export default function outsideClick(element, event, callback) {
   const outside = "data-outside";
 
   if (!element.hasAttribute(outside)) {
+    console.log("alou");
     setTimeout(() => {
       html.addEventListener(event, handleOutsideClick, { once: true });
     });
@@ -13,8 +14,9 @@ export default function outsideClick(element, event, callback) {
       element.removeAttribute(outside);
 
       html.removeEventListener(event, handleOutsideClick);
+      console.log("chamada");
 
-      callback;
+      callback();
     }
   }
 
