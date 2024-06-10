@@ -70,6 +70,16 @@
     gap: 0;
   }
 
+  .header-nav.ativo ul li {
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header-nav.ativo ul li a {
+    display: block;
+    padding: 10px 20px;
+  }
+
   .header-nav ul li::after {
     display: none;
   }
